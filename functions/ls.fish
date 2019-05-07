@@ -1,12 +1,18 @@
 ##############################################################################
 # Set some base options for the ls command.
 function ls -d "Base ls command with extras added"
+
+    # Decide on the base arguments.
     switch (uname)
         case "Darwin"
-            /bin/ls -F $argv
+            set args -F
         case "*"
-            /bin/ls -F --color $argv
+            set args -F --color
     end
+
+    # Actually ls.
+    command ls $args $argv
+
 end
 
 ### ls.fish ends here
