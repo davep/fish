@@ -1,7 +1,7 @@
 ##############################################################################
 # Configure ls.
 
-export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+set -x CLICOLOR 1
+set -x LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
 
 ### ls.fish ends here
