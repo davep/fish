@@ -6,7 +6,4 @@ alias vdir=dir
 alias d=dir
 alias v=vdir
 
-# Visit github.
-alias gh="o https://github.com/"
-
 ### aliases.fish ends here
