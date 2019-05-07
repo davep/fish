@@ -14,7 +14,7 @@ function gh -d "Visit the repo in its origin hub"
     end
 
     # Open in the browser.
-    o "https://"(string replace ":" "/" (string replace -r '\.git$' "" (string split "@" $origin)[ 2 ]))
+    open "https://"(string replace ":" "/" (string replace -r '\.git$' "" (string split "@" $origin)[ 2 ]))
 
 end
 
