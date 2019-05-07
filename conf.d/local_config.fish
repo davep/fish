@@ -9,4 +9,4 @@ for local_conf in ~/.config/local-fish/*.fish
     source $local_conf
 end
 
-### local-config.fish ends here
+### local_config.fish ends here
