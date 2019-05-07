@@ -1,6 +1,9 @@
 ##############################################################################
 # General settings.
 
+# Set the terminal type.
+set -x TERM xterm-256color
+
 # Always use less as my paper.
 set -x PAGER less
 
