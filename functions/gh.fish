@@ -13,17 +13,8 @@ function gh -d "Visit the repo in its origin hub"
         return 1
     end
 
-    # Remove the protocol.
-    set origin (echo $origin | cut -d "@" -f2)
-
-    # Get the host.
-    set host (echo $origin | cut -d ":" -f1)
-
-    # Get the location.
-    set location (string replace -r '\.git$' "" (echo $origin | cut -d ":" -f2))
-
     # Open in the browser.
-    o "https://$host/$location"
+    o "https://"(string replace ":" "/" (string replace -r '\.git$' "" (string split "@" $origin)[ 2 ]))
 
 end
 
