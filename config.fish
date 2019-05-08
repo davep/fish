@@ -5,9 +5,8 @@
 # default system shell. This might seem a bit OTT but it really helps with
 # all sorts of issues with tramp on GNU Emacs.
 if [ "$TERM" = "dumb" ]
-then
     exec /bin/sh -l
-fi
+end
 
 # Set the terminal type.
 set -x TERM xterm-256color
