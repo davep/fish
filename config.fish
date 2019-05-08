@@ -11,8 +11,8 @@ set -x PAGER less
 set -x DICTIONARY british
 
 # Extra path items.
-set PATH ~/.cargo/bin $PATH
-set PATH ~/.local/bin $PATH
-set PATH ~/bin        $PATH
+add_path_maybe ~/.cargo/bin
+add_path_maybe ~/.local/bin
+add_path_maybe ~/bin
 
 ### config.fish ends here
