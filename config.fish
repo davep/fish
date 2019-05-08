@@ -1,6 +1,14 @@
 ##############################################################################
 # General settings.
 
+# If we're a dumb terminal give up on using fish and just go with the
+# default system shell. This might seem a bit OTT but it really helps with
+# all sorts of issues with tramp on GNU Emacs.
+if [ "$TERM" = "dumb" ]
+then
+    exec /bin/sh -l
+fi
+
 # Set the terminal type.
 set -x TERM xterm-256color
 
