@@ -15,4 +15,11 @@ alias o=open
 alias p2=python2
 alias p3=python3
 
+# There seems to be a clash with /bin/open on some GNU/Linux boxes, and
+# fish's own open command. So if I'm on a system with a /bin/open, let's
+# simply alias it to xdg-open.
+if test -x /bin/open
+    alias open="xdg-open > /dev/null 2>&1"
+end
+
 ### aliases.fish ends here
