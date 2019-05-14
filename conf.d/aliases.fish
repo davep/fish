@@ -10,6 +10,8 @@ alias ....="cd ../../.."
 
 # Be really lazy when opening things.
 alias o=open
+alias l=less
+alias m=more
 
 # Python things
 alias p2=python2
