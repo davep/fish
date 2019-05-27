@@ -7,6 +7,7 @@ alias d=dir
 alias v=vdir
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias prev="cd -"
 
 # Be really lazy when opening things.
 alias o=open
