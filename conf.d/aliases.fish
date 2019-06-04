@@ -18,6 +18,10 @@ alias m=more
 alias p2=python2
 alias p3=python3
 
+# Updating things.
+alias aupd="sudo apt update"
+alias aupg="sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
+
 # There seems to be a clash with /bin/open on some GNU/Linux boxes, and
 # fish's own open command. So if I'm on a system with a /bin/open, let's
 # simply alias it to xdg-open.
