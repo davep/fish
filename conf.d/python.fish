@@ -10,10 +10,13 @@ set -x PIPENV_VENV_IN_PROJECT true
 # Ensure that Python uses an rc file when we start the repl.
 set -x PYTHONSTARTUP ~/.pythonrc
 
-# If it looks like we have pyenv kicking around...
-if test -d ~/.pyenv/bin
-    # ...add it to the path.
-    set PATH ~/.pyenv/bin $PATH
+# See if .pyenv lives locally. While I tend to homebrew things on my Mac, I
+# tend to install locally on GNU/Linux. If it's done via homebrew on the Mac
+# it'll be in /usr/local/bin so it's in the path already.
+add_path_maybe ~/.pyenv/bin
+
+# If pyenv is in the path...
+if type -q pyenv
     # Set up pyenv support in fish.
     status --is-interactive; and source (pyenv init - | psub)
 end
