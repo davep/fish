@@ -18,4 +18,4 @@ if test -d ~/.pyenv/bin
     status --is-interactive; and source (pyenv init - | psub)
 end
 
-### pipenv.fish ends here
+### python.fish ends here
