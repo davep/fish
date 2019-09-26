@@ -22,6 +22,10 @@ abbr -g greedy "du -hs * | sort -rh"
 abbr -g p2 python2
 abbr -g p3 python3
 
+# Git things
+abbr -g gp "git pull"
+abbr -g gin "git init"
+
 # Updating things.
 abbr -g aupd "sudo apt update"
 abbr -g aupg "sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
