@@ -27,7 +27,13 @@ abbr -g gp "git pull"
 abbr -g gin "git init"
 
 # Updating things.
-abbr -g aupd "sudo apt update"
-abbr -g aupg "sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
+switch (uname)
+    case "Linux"
+        abbr -g aupd "sudo apt update"
+        abbr -g aupg "sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
+    case "Darwin"
+        abbr -g bupd "brew update"
+        abbr -g bupg "brew upgrade"
+end
 
 ### abbreviations.fish ends here
