@@ -25,6 +25,8 @@ abbr -g p3 python3
 # Git things
 abbr -g gp "git pull"
 abbr -g gin "git init"
+abbr -g gitdev "git checkout develop"
+abbr -g gitmas "git checkout master"
 
 # Updating things.
 switch (uname)
