@@ -25,6 +25,8 @@ abbr -g p3 python3
 # Git things
 abbr -g gp "git pull"
 abbr -g gin "git init"
+abbr -g gd "git diff"
+abbr -g gstat "git status"
 abbr -g gdev "git checkout develop"
 abbr -g gmas "git checkout master"
 
