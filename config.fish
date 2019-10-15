@@ -21,5 +21,6 @@ set -x DICTIONARY british
 add_path_maybe ~/.cargo/bin
 add_path_maybe ~/.local/bin
 add_path_maybe ~/bin
+add_path_maybe /usr/local/sbin
 
 ### config.fish ends here
