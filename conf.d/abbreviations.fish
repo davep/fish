@@ -17,7 +17,11 @@ abbr -g m more
 # Be lazy when doing some things.
 abbr -g c clear
 abbr -g greedy "du -hs * | sort -rh"
-abbr -g goog googler
+
+# Make using https://github.com/jarun/googler shorter.
+if type -q googler
+    abbr -g goog googler
+end
 
 # Python things
 abbr -g p2 python2
