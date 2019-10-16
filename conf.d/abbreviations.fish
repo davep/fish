@@ -35,7 +35,7 @@ abbr -g gstat "git status"
 abbr -g gdev "git checkout develop"
 abbr -g gmas "git checkout master"
 
-# Updating things.
+# Installing and updating things.
 switch (uname)
     case "Linux"
         abbr -g aupd "sudo apt update"
@@ -43,6 +43,9 @@ switch (uname)
     case "Darwin"
         abbr -g bupd "brew update"
         abbr -g bupg "brew upgrade"
+        abbr -g bi "brew install"
+        abbr -g bu "brew uninstall"
+        abbr -g bs "brew search"
 end
 
 ### abbreviations.fish ends here
