@@ -36,6 +36,11 @@ abbr -g gstat "git status"
 abbr -g gdev "git checkout develop"
 abbr -g gmas "git checkout master"
 
+# If https://github.com/o2sh/onefetch is installed.
+if type -q onefetch
+    abbr -g of onefetch
+end
+
 # Installing and updating things.
 switch (uname)
     case "Linux"
