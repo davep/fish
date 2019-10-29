@@ -55,4 +55,9 @@ switch (uname)
         abbr -g bs "brew search"
 end
 
+# I use rust in more than one place, so if cargo exists...
+if type -q cargo
+    abbr -g cargup "cargo install-update -a"
+end
+
 ### abbreviations.fish ends here
