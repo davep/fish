@@ -9,7 +9,7 @@ if string match -q (uname) "Darwin"
 
     # Show some information about current WiFi
     abbr -g wifi "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --info"
-    abbr -h wifils "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --scan"
+    abbr -g wifils "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --scan"
 
 end
 
