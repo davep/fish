@@ -11,10 +11,12 @@ if string match -q (uname) "Darwin"
     end
 
     # Ensure MySQL client library is seen by things.
-    if test -d /usr/local/opt/mysql-client/
-        set LDFLAGS "-L/usr/local/opt/mysql-client/lib" $LDFLAGS
-        set CPPFLAGS "-I/usr/local/opt/mysql-client/include" $CPPFLAGS
-        set PKG_CONFIG_PATH "/usr/local/opt/mysql-client/lib/pkgconfig" $PKG_CONFIG_PATH
+    if test -d "/usr/local/opt/mysql-client@5.7/"
+        add_path_maybe "/usr/local/opt/mysql-client@5.7/bin"
+        set LDFLAGS "-L/usr/local/opt/mysql-client@5.7/lib" $LDFLAGS
+        set LIBRARY_PATH "/usr/local/opt/mysql-client@5.7/lib" $LIBRARY_PATH
+        set CPPFLAGS "-I/usr/local/opt/mysql-client@5.7/include" $CPPFLAGS
+        set PKG_CONFIG_PATH "/usr/local/opt/mysql-client@5.7/lib/pkgconfig" $PKG_CONFIG_PATH
     end
 
 end
