@@ -1,7 +1,12 @@
 ##############################################################################
-# Add some readline support to REPLs that don't have it.
+# Ensure the correct readline configuration is used.
 
-# If I have rlwrap...
+# If https://github.com/davep/.inputrc.d is installed...
+if test -d ~/.inputrc.d
+    set -gx INPUTRC ~/.inputrc.d/inputrc
+end
+
+# Also, if rlwrap is installed...
 if type -fq rlwrap
     # ...wrap various REPLs if I also have them.
     type -fq clojure; and alias clojure="rlwrap clojure"
@@ -9,4 +14,4 @@ if type -fq rlwrap
     type -fq ros; and alias lisp="rlwrap ros run"
 end
 
-### rlwrapper.fish ends here
+### readline.fish ends here
