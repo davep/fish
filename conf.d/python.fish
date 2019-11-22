@@ -8,7 +8,7 @@ set -x VIRTUAL_ENV_DISABLE_PROMPT yes
 set -x PIPENV_VENV_IN_PROJECT true
 
 # Ensure that Python uses an rc file when we start the repl.
-set -x PYTHONSTARTUP ~/.pythonrc
+set -x PYTHONSTARTUP ~/.pythonrc.d/pythonrc
 
 # See if .pyenv lives locally. While I tend to homebrew things on my Mac, I
 # tend to install locally on GNU/Linux. If it's done via homebrew on the Mac
