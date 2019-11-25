@@ -8,7 +8,7 @@ if string match -q (uname) "Darwin"
     abbr -g macdob 'stat -f "%Sa" /var/db/.AppleSetupDone'
 
     # Show some information about current WiFi
-    abbr -g wifi "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --info"
+    abbr -g wifi "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --getinfo"
     abbr -g wifils "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --scan"
 
 end
