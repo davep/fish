@@ -12,4 +12,9 @@ if type -q googler
     abbr -g goog googler
 end
 
+# Easily call on https://alexjs.com/
+if type -q npx
+    abbr -g lintinc "npx alex"
+end
+
 ### misc.fish ends here
