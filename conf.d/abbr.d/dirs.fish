@@ -1,7 +1,9 @@
 ##############################################################################
 # Directory listing and movement abbreviations.
 abbr -g d ls
+abbr -g da "ls -a"
 abbr -g v "ls -l"
+abbr -g va "ls -la"
 abbr -g up "cd .."
 abbr -g ... "cd ../.."
 abbr -g .... "cd ../../.."
