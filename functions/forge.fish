@@ -1,7 +1,7 @@
 ##############################################################################
-# Attempt go visit the origin hub for the current repo.
+# Attempt go visit the origin forge for the current repo.
 
-function gh -d "Visit the repo in its origin hub"
+function forge -d "Visit the repo in its origin forge"
 
     # Check that there is some sort of origin.
     set origin (git config --get remote.origin.url)
@@ -18,4 +18,4 @@ function gh -d "Visit the repo in its origin hub"
 
 end
 
-### gh.fish ends here
+### forge.fish ends here
