@@ -23,5 +23,6 @@ add_path_maybe ~/.local/bin
 add_path_maybe ~/bin
 add_path_maybe /usr/local/bin
 add_path_maybe /usr/local/sbin
+add_path_maybe /usr/X11/bin
 
 ### config.fish ends here
