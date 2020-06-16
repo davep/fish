@@ -8,7 +8,7 @@ abbr -g gb "git branch"
 abbr -g gco "git checkout"
 abbr -g gstat "git status"
 abbr -g gdev "git checkout develop"
-abbr -g gmas "git checkout master"
+abbr -g gma "git checkout main"
 
 # If https://github.com/o2sh/onefetch is installed.
 if type -q onefetch
