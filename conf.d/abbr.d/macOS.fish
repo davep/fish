@@ -14,6 +14,9 @@ if string match -q (uname) "Darwin"
     # Flush the DNS cache.
     abbr -g flushdns "sudo killall -HUP mDNSResponder"
 
+    # Get the main system summary
+    abbr -g macsum "system_profiler SPHardwareDataType"
+
 end
 
 ### macOS.fish ends here
