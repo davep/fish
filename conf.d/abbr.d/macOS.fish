@@ -17,6 +17,9 @@ if string match -q (uname) "Darwin"
     # Get the main system summary
     abbr -g macsum "system_profiler SPHardwareDataType"
 
+    # Allow quickly getting to the Mac Installs tracking directory.
+    abbr -g macin "cd ~/develop/tools/mac-installs"
+
 end
 
 ### macOS.fish ends here
