@@ -12,6 +12,7 @@ if type -fq rlwrap
     type -fq clojure; and alias clojure="rlwrap clojure"
     type -fq csi; and alias csi="rlwrap csi"
     type -fq ros; and alias lisp="rlwrap ros run"
+    type -fq scheme48; and alias scheme48="rlwrap scheme48"
 end
 
 ### readline.fish ends here
