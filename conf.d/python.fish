@@ -15,10 +15,10 @@ set -x PYTHONSTARTUP ~/.pythonrc.d/pythonrc
 # it'll be in /usr/local/bin so it's in the path already.
 add_path_maybe ~/.pyenv/bin
 
-# If pyenv is in the path...
-if type -q pyenv
-    # Set up pyenv support in fish.
-    status --is-interactive; and source (pyenv init - | psub)
+# If pyenv is in the path and this is an interactive shell...
+if type -q pyenv and status is-interactive
+    pyenv init --path | source
+    pyenv init - | source
 end
 
 ### python.fish ends here
