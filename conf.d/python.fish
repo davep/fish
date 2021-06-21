@@ -16,7 +16,7 @@ set -x PYTHONSTARTUP ~/.pythonrc.d/pythonrc
 add_path_maybe ~/.pyenv/bin
 
 # If pyenv is in the path and this is an interactive shell...
-if type -q pyenv and status is-interactive
+if type -q pyenv; and status is-interactive
     pyenv init --path | source
     pyenv init - | source
 end
