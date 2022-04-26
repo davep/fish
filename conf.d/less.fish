@@ -21,4 +21,10 @@ else if type -fq src-hilite-lesspipe.sh
     set -x LESSOPEN "|src-hilite-lesspipe.sh %s"
 end
 
+# Finally, as the best option, if https://github.com/Textualize/rich-cli is
+# installed...
+if type -q rich
+    set -x LESSOPEN "|rich --force-terminal %s"
+end
+
 ### less.fish ends here
