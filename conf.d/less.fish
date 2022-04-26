@@ -24,6 +24,7 @@ end
 # Finally, as the best option, if https://github.com/Textualize/rich-cli is
 # installed...
 if type -q rich
+    set -x LESS "$LESS"R
     set -x LESSOPEN "|rich --force-terminal %s"
 end
 
