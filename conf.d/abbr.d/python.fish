@@ -11,4 +11,11 @@ if type -q poetry; and status is-interactive;
     abbr -g pep poetry run python;
 end
 
+if type -q pipenv; and status is-interactive;
+    abbr -g pv pipenv
+    abbr -g pvs pipenv shell
+    abbr -g pvr pipenv run
+    abbr -g pvp pipenv run python
+end
+
 ### python.fish ends here
