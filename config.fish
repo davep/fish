@@ -17,13 +17,4 @@ set -x PAGER less
 # Ensure we always speak British.
 set -x DICTIONARY british
 
-# Extra path items.
-add_path_maybe ~/.cargo/bin
-add_path_maybe ~/.local/bin
-add_path_maybe ~/.roswell/bin
-add_path_maybe ~/bin
-add_path_maybe /usr/local/bin
-add_path_maybe /usr/local/sbin
-add_path_maybe /usr/X11/bin
-
 ### config.fish ends here
