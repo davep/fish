@@ -1,11 +1,6 @@
 ##############################################################################
 # Things to make a Homebrew environment nicer.
 
-# On Apple Silicon Macs Homebrew lives under /opt rather than /usr/local.
-# While I could just make stuff with with a bit of symbolic linking, I sense
-# I should really embrace the new...
-add_path_maybe /opt/homebrew/bin/
-
 # If we're on macOS...
 if string match -q (uname) "Darwin"
 
