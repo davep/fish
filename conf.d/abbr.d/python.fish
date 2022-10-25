@@ -8,6 +8,7 @@ if type -q poetry; and status is-interactive;
     abbr -g pes poetry shell;
     abbr -g pei poetry init;
     abbr -g per poetry run;
+    abbr -g pt poetry run make test
     abbr -g pep poetry run python;
 end
 
