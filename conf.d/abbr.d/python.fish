@@ -5,11 +5,11 @@ abbr -g pylintshame "rg --no-messages \"pylint:disable=\" | awk 'BEGIN{FS=\"disa
 
 if type -q poetry; and status is-interactive;
     abbr -g pe poetry;
-    abbr -g pes poetry shell;
-    abbr -g pei poetry init;
-    abbr -g per poetry run;
+    abbr -g pes poetry shell
+    abbr -g pei poetry init
+    abbr -g per poetry run
     abbr -g pt poetry run make test
-    abbr -g pep poetry run python;
+    abbr -g pep poetry run python
 end
 
 if type -q hatch; and status is-interactive;
