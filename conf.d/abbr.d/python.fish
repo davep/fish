@@ -12,6 +12,13 @@ if type -q poetry; and status is-interactive;
     abbr -g pep poetry run python;
 end
 
+if type -q hatch; and status is-interactive;
+    abbr -g hs hatch shell
+    abbr -g hr hatch run
+    abbr -g ht hatch run test
+    abbr -g hp hatch run python
+end
+
 if type -q pipenv; and status is-interactive;
     abbr -g pv pipenv
     abbr -g pvs pipenv shell
