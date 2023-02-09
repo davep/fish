@@ -25,6 +25,11 @@ if type -q cargo
     set upg "$upg; cargo install-update -a"
 end
 
+# I use pipx in more than once place, so if pipx exists...
+if type -q pipx
+    set upg "$upg; pipx upgrade-all"
+end
+
 # Create the aliases for doing updates and upgrades.
 abbr -g upd "$upd"
 abbr -g upg "$upg"
