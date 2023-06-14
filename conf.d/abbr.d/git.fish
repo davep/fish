@@ -11,6 +11,7 @@ abbr -g gstat "git status"
 abbr -g gdev "git checkout develop"
 abbr -g gma "git checkout main"
 abbr -g gst "git status"
+abbr -g gus "git branch --set-upstream-to=origin/(git rev-parse --abbrev-ref HEAD) (git rev-parse --abbrev-ref HEAD)"
 
 # If https://github.com/o2sh/onefetch is installed.
 if type -q onefetch
