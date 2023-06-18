@@ -20,6 +20,11 @@ if string match -q (uname) "Darwin"
     # Allow quickly getting to the Mac Installs tracking directory.
     abbr -g macin "cd ~/develop/tools/mac-installs"
 
+    # iCloud gets stuck now and again, this helps unstick it. This of course
+    # isn't really an abbreviation, but it'll help me remember the exact
+    # command.
+    abbr -g unstick-icloud "killall bird"
+
 end
 
 ### macOS.fish ends here
