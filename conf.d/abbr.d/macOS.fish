@@ -25,6 +25,14 @@ if string match -q (uname) "Darwin"
     # command.
     abbr -g unstick-icloud "killall bird"
 
+    # Tools for turning desktop widgets off and on.
+    abbr -g widoff "defaults write com.apple.WindowManager StandardHideWidgets -int 1"
+    abbr -g widon "defaults write com.apple.WindowManager StandardHideWidgets -int 0"
+
+    # Tools for turning stage manager widgets off and on.
+    abbr -g smwidoff "defaults write com.apple.WindowManager StageManagerHideWidgets -int 1"
+    abbr -g smwidon "defaults write com.apple.WindowManager StageManagerHideWidgets -int 0"
+
 end
 
 ### macOS.fish ends here
