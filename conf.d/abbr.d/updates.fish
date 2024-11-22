@@ -30,6 +30,11 @@ if type -q pipx
     set upg "$upg; pipx upgrade-all"
 end
 
+# I use uv in some places, so if uv exists...
+if type -q uv
+    set upg "$upg; uv tool upgrade --all"
+end
+
 # Create the aliases for doing updates and upgrades.
 abbr -g upd "$upd"
 abbr -g upg "$upg"
