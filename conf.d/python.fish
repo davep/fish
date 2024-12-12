@@ -16,7 +16,7 @@ set -x PYTHONSTARTUP ~/.pythonrc.d/pythonrc
 # See if .pyenv lives locally. While I tend to homebrew things on my Mac, I
 # tend to install locally on GNU/Linux. If it's done via homebrew on the Mac
 # it'll be in /usr/local/bin so it's in the path already.
-add_path_maybe ~/.pyenv/bin
+fish_add_path --global --path ~/.pyenv/bin
 
 # If pyenv is in the path and this is an interactive shell...
 if type -q pyenv; and status is-interactive

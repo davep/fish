@@ -3,6 +3,6 @@
 
 # Don't install gem stuff "globally".
 set -x GEM_HOME ~/.local/share/gems
-add_path_maybe ~/.local/share/gems/bin
+fish_add_path --global --path ~/.local/share/gems/bin
 
 ### ruby.fish ends here
