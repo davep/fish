@@ -10,6 +10,7 @@ end
 
 # Set the terminal type.
 set -x TERM xterm-256color
+set -x COLORTERM truecolor
 
 # Always use less as my paper.
 set -x PAGER less
