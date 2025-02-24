@@ -8,6 +8,8 @@ abbr -g va "ls -la"
 abbr -g up "cd .."
 abbr -g ... "cd ../.."
 abbr -g .... "cd ../../.."
+abbr -g ..... "cd ../../../.."
+abbr -g ...... "cd ../../../../.."
 abbr -g prev "cd -"
 
 ### dirs.fish ends here
