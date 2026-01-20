@@ -7,4 +7,4 @@ if type -fq /opt/homebrew/bin/brew
     /opt/homebrew/bin/brew shellenv | source
 end
 
-### homebrew.fish ends here
+### 00_homebrew.fish ends here
