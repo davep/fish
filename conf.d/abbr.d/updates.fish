@@ -32,7 +32,7 @@ end
 
 # I use uv in some places, so if uv exists...
 if type -q uv
-    set upg "$upg; uv tool upgrade --all"
+    set upg "$upg; uv tool upgrade --all; uv cache prune"
 end
 
 # Create the aliases for doing updates and upgrades.
