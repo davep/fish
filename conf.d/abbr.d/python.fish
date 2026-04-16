@@ -26,4 +26,8 @@ if type -q pipenv; and status is-interactive;
     abbr -g pvp pipenv run python
 end
 
+if type -q uv; and status is-interactive;
+    abbr -g py uv run python
+end
+
 ### python.fish ends here
