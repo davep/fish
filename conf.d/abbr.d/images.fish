@@ -6,4 +6,8 @@ if type -q mogrify
     abbr -g webpjpg "mogrify -format webp -quality 95"
 end
 
+if type -q exiftool
+    abbr -g nogps "exiftool -gps:all= -overwrite_original"
+end
+
 ### images.fish ends here
