@@ -12,7 +12,7 @@ switch (uname)
         set upg "sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
     case "Darwin"
         set upd "brew update"
-        set upg "brew upgrade; brew cleanup"
+        set upg "brew upgrade --yes; brew cleanup"
         abbr -g bi "brew install"
         abbr -g bu "brew uninstall"
         abbr -g bs "brew search"
