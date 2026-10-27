@@ -19,4 +19,9 @@ if type -q npx
     abbr -g lintinc "npx alex"
 end
 
+# SSL certificate peeking
+if type -q nmap
+    abbr ssl-cert "nmap --script ssl-cert -p 443"
+end
+
 ### misc.fish ends here
